@@ -1,0 +1,134 @@
+.hero1__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+     @include tablet() {
+        justify-content: center;
+        align-items: center;
+    }
+
+  .hero1__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+        @include tablet() {
+            align-items: center;
+        }
+
+        @include mobile() {
+            align-items: flex-start;
+        }
+
+        & h1 {
+            max-width: 542px;
+            color: #000;
+            font-family: "Poppins", sans-serif;
+            font-size: 53px;
+            font-weight: 700;
+
+            @include tablet() {
+                text-align: center;
+            }
+
+            @include mobile() {
+                font-size: 38px;
+            }
+        }   
+
+        & p {
+            max-width: 423px;
+            color: #575455;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+
+            @include tablet() {
+                text-align: center;
+            }
+
+            @include mobile() {
+                font-size: 18px;
+            }
+        }
+
+        & button {
+            max-width: 180px;
+            flex-shrink: 0;
+            border-radius: 50px;
+            border: 1px solid #1f7cff;
+            background-color: #1f7cff;
+            color: #fff;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 12px 43px;
+
+            &:hover {
+                color: #1f7cff;
+                background-color: white;
+                border: 1px solid #1f7cff;
+            }
+        }
+    }
+
+  @include tablet() {
+        .hero1__img {
+            display: none;
+        }
+    }
+
+  @include mobile() {
+        .hero1__img {
+            display: none;
+        }
+    }
+}
+
+.hero1__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 139px;
+
+    @include tablet() {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include mobile() {
+        flex-direction: column;
+
+    }
+
+    .info h2 {
+        width: 152px;
+        color: #070f18;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+
+        @include tablet() {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        @include mobile() {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .hero1__img {
+        display: flex;
+        gap: 50px;
+
+        @include mobile() {
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+    }
+}

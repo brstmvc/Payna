@@ -1,0 +1,129 @@
+.hero3__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 56px;
+
+    @include tablet() {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @include mobile() {
+        flex-direction: column;
+        gap: 40px;
+
+        .hero3__img img {
+            width: 321px;
+            height: 227px;
+        }
+    }
+
+
+
+    .hero3__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        @include tablet() {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        @include mobile() {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        & h5 {
+            color: #F75C4E;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+
+        & h3 {
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+
+            @include mobile() {
+                font-size: 28px;
+            }
+        }
+
+        & p {
+            max-width: 396px;
+            color: #575455;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+
+            @include mobile() {
+                max-width: 333px;
+            }
+        }
+
+    }
+
+    .hero3__login {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        @include tablet() {
+            margin-left: -110px;
+        }
+        
+        @include mobile() {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        & input {
+            width: 299px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 50px;
+            border: 1px solid #F5F6FB;
+            background-color: #F5F6FB;
+            color: #575455;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 20px;
+           
+        }
+
+        & button {
+            width: 180px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 50px;
+            border: 1px solid #1F7CFF;
+            background: #1F7CFF;
+            color: #FFF;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            position: absolute;
+            right: -110px;
+            top: 0;
+
+            @include mobile() {
+                position: static;
+                width: 299px;
+            }
+        }
+    }
+}
